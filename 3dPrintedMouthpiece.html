@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+	<header>
+		<title>3D Printed Saxophone Mouthpiece Project</title>
+		<link href='http://fonts.googleapis.com/css?family=Bitter' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=PT+Sans:700' rel='stylesheet' type='text/css'>
+		<link href="slideshow.css" rel="stylesheet">
+		<link href="main.css" rel="stylesheet">
+	</header>
+	
+
+	<body>
+	<div class="wrapper">
+		
+		<div id="header">
+			<div id="header_content">
+				<a href="index.html"><img id="logo" src="img/Alogo2.svg" height=25></a>
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="aboutme.html">About Me</a></li>
+					<li><a href="programming.html">Programming</a></li>
+					<li><a href="music.html">Music</a></li>
+					<li><a href="3dcad.html">3D/CAD</a></li>
+					<li><a href="hobby.html">Hobby</a></li>
+					<li><a href="resume.html">Resume</a></li>
+					<li><a href="notes.html">Notes</a></li>
+					<li><a href="misc.html">Misc.</a></li>
+				</ul>
+			</div>
+		</div>
+
+		
+		<section class="restofpageothers">
+			<div class="otherpagecontent">
+				<h2>3D Printed Saxophone Mouthpiece Project</h2>
+				<figure style="float: left; padding: 20px;">
+					<img src="img/3dPrintedMouthpiece/3dprinted_sax_mpc_3.jpg" width=200 alt="First successful prototype">
+					<figcaption>First successful prototype</figcaption>
+				</figure>
+				<p>The purpose of this project is to use 3D modeling tools and 3D printing to design and create custom saxophone mouthpieces. The shape, particularly internally, can then be easily modified to experiment with different designs and see the results and the effect different modifications have on the sound and playability of the mouthpiece.</p>
+				<p><br>I have tried several times to model a saxophone mouthpiece, but have hit a barrier each time. The shape of a saxophone mouthpiece has proven particularly challenging to model, and especially to model accurately (which is important). I finally figured out a way to create the model which not only produces an accurate recreation of a mouthpiece, but also allows different parameters of the model to be varied fairly easily.<br><br></p>
+				<figure style="float: left; padding: 20px">
+					<img src="img/3dPrintedMouthpiece/3dsaxmpc_07.jpg" width=200>
+					<figcaption>Comparison of Meyer alto sax <br>mouthpiece(left) and the 3D <br>printed mouthpiece</figcaption>
+				</figure>
+				<figure style="float: right; clear:right; padding: 20px 20px 0 20px;">
+					<img src="img/3dPrintedMouthpiece/3dsaxmpc_01.png" width=300>
+					<figcaption>Base shape</figcaption>
+				</figure>
+				<figure style="float: right; clear:right; padding: 0 20px 20px 20px;">
+					<img src="img/3dPrintedMouthpiece/3dsaxmpc_02.png" width=300>
+					<figcaption>Base shape with subtractions</figcaption>
+				</figure>
+
+				
+
+				<p><br>I set up the model as a set of boolean operations. There is one shape that serves as the base shape for the mouthpiece, then several others that subtract volume from that base shape. Using this setup, any of the subtracting pieces can be modified and those changes will be reflected in the base. </p>
+				<p><br>There is also a "subdivision surfaces" modifier on all the objects, which increases their resolution and smooths them, making it simpler to create a high resolution mesh without needing to edit as many vertices.<br><br><br><br><br><br></p>
+				<figure style="padding: 20px;">
+					<img src="img/3dPrintedMouthpiece/3dsaxmpc_ortho.png" height=120>
+					<img src="img/3dPrintedMouthpiece/3dsaxmpc_right.png" height=120>
+					<img src="img/3dPrintedMouthpiece/3dsaxmpc_top.png" height=120>
+					<figcaption>Several views of the 3D model of the mouthpiece prototype (ortho, right, top)</figcaption>
+				</figure>
+				<p>Below are two prototypes I 3D printed. The blue one is the original, which is based soley on the Meyer mouthpiece, as closely as I could match it. The clear one is a modification of that model, where the slope of the inner part of the mouthpiece is changed to have a much more distinct point where it goes from a shallow angle to a steep angle. This is called a "baffle", and should lead to a much "brighter" sound.</p>
+				<figure style="padding: 20px;">
+					<img src="img/3dPrintedMouthpiece/3dsaxmpc_03.jpg" height=200>
+					<img src="img/3dPrintedMouthpiece/3dsaxmpc_04.jpg" height=200>
+					<img src="img/3dPrintedMouthpiece/3dsaxmpc_06.jpg" height=200>
+					<figcaption>Two versions of the initial 3D mouthpiece prototype: the clear version has a steeper 'baffle' (inside slope)</figcaption>
+				</figure>
+				
+				<p></p>
+				<figure style="float:left; padding: 20px;">
+					<img src="img/3dPrintedMouthpiece/handcarved_saxmpc.jpg" height=300>
+					<figcaption>Handcarved alto saxophone mouthpiece</figcaption>
+				</figure>
+				<p><br>As an aside, this is a mouthpiece that I carved from a branch of poplar. I used a saw to cut it to the general shape, and then used mainly a whittling knife (although occasionally a Dremel and a drill to carve out the middle). It is much less precise than any mouthpiece I own or have 3D printed, but it does play!<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br></p>
+			</div>
+		</section>
+	
+		<section class="footer">
+			<div id="footercontent">
+				Designed and created by Aaron J. Kramer.
+			</div>
+		</section>
+		
+	</div> <!-- wrapper -->
+	</body>
+</html>

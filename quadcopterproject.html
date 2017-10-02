@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+	<header>
+		<title>Quadcopter Project</title>
+		<link href='http://fonts.googleapis.com/css?family=Bitter' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=PT+Sans:700' rel='stylesheet' type='text/css'>
+		<link href="slideshow.css" rel="stylesheet">
+		<link href="main.css" rel="stylesheet">
+	</header>
+	
+
+	<body>
+	<div class="wrapper">
+		
+		<div id="header">
+			<div id="header_content">
+				<a href="index.html"><img id="logo" src="img/Alogo2.svg" height=25></a>
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="aboutme.html">About Me</a></li>
+					<li><a href="programming.html">Programming</a></li>
+					<li><a href="music.html">Music</a></li>
+					<li><a href="3dcad.html">3D/CAD</a></li>
+					<li><a href="hobby.html">Hobby</a></li>
+					<li><a href="resume.html">Resume</a></li>
+					<li><a href="notes.html">Notes</a></li>
+					<li><a href="misc.html">Misc.</a></li>
+				</ul>
+			</div>
+		</div>
+
+		
+		<section class="restofpageothers">
+			<div class="otherpagecontent" id="quadcopterpage">
+					<h2>Quadcopter Project</h2>
+					<p>Goal: To configure and modify a UAV (a quadcopter), to allow First
+						Person View (FPV) flight, video recording, control via laptop/Xbox
+						Kinect motion controls, and other sensors/peripherals.</p>
+						<p>Team: Aaron Kramer, Nick Laurenzano, Joseph Owen </p>
+						<figure style="padding-left: 90px">
+							<img src="img/quadcopter/aerosky-quadcopter.jpg" width=700>
+							<figcaption>The quadcopter we purchased to work with: Aerosky H100.</figcaption>
+						</figure>
+						<p>After looking at a few quadcopters to purchase, we finally decided
+							on the Aerosky H100. It is a little over a foot wide in both directions,
+							not including the propellors, which have a 10in. diameter. It has a flight
+							time of ~10-15 minutes using a 2200mah Lipo battery that came with it
+							and a 4000mah Lipo battery that we purchased to run it for longer. We
+							have not tested the carrying capacity but estimate it to be around 1000g (2.2lbs).</p>
+							<figure>
+								<img src="img/quadcopter/quad_02.jpg" width=300>
+								<img src="img/quadcopter/quad_03.jpg" width=300>
+							</figure>
+							<br>
+							<b>5/7/14</b>
+							<p>Started experimenting with loading different software onto the
+								flight control board of the quadcopter. We found that the quadcopter
+								can run a software package called Multi Wii
+								 (<a href="http://www.multiwii.com">www.multiwii.com</a>). This open
+								 source software works with multiple flight control boards, and 
+								 allows for customization for different quadcopter set ups. Being 
+								 uncertain about what hardware was in it, we experimented with 
+								 various settings trying to get it to function correctly. Unfortunately,
+								 though we were able to upload software and the transmitter was
+								 communicating with the quadcopter, it would not arm to begin
+								 flight.</p>
+							<b>5/9/14</b>
+							<p>Further looked into customizing the software so that it would function
+								correctly with our set up. Since we weren't certain what flight
+								control board hardware the quadcopter came with, we decided to open
+								up the center so we could see the board itself and hopefully
+								identify what it was and how to configure the software to communicate
+								with it correctly. Upon opening it up we found:</p>
+								<figure>
+									<img src="img/quadcopter/quad_05.jpg" width=250>
+									<img src="img/quadcopter/quad_06.jpg" width=250>
+									<img src="img/quadcopter/quad_07.jpg" width=250>
+								</figure>
+								<br>
+								<p>
+								Unfortunately Aerosky outfitted this quadcopter with a generic
+								unmarked control board, so this was not helpful. However, by
+								connecting the board to my computer and using the diagnostic GUI
+								associated with the software package, we finally identified that
+								the accelerometer was not reading correctly, causing the quadcopter
+								to be unable to arm. By using the CALIB_ACC (calibrate accelerometer)
+								feature, we were able to get the quadcopter to turn on and arm
+								correctly.</p>
+								<figure>
+								<img src="img/quadcopter/multiwiiGUI.png" width=700>
+							</figure>
+							<br><br><br><br><br><br><br><br><br><br>
+			</div>
+		</section>
+	
+		<section class="footer">
+			<div id="footercontent">
+				Designed and created by Aaron J. Kramer.
+			</div>
+		</section>
+		
+	</div> <!-- wrapper -->
+	</body>
+</html>
